@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+import streamlit as st
+import streamlit.components.v1 as components
+
+st.set_page_config(page_title="제동거리 시뮬레이터", layout="wide")
+
+html_code = """<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
@@ -709,3 +714,6 @@
 </script>
 </body>
 </html>
+"""
+
+components.html(html_code, height=1600, scrolling=True)
